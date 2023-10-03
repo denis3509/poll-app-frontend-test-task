@@ -4,11 +4,7 @@
 
 <script>
 export default {
-  name: "Poll",
-  props: {
-
-
-  }
+  name: "UserTestTable"
 }
 </script>
 

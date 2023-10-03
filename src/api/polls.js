@@ -1,14 +1,28 @@
+import {getClient} from "@/api/client";
 
+export default class PollsApi {
 
+    async getPollList() {
+        const client = getClient()
+        const resp = await  client.get("polls/poll-list")
+    }
 
-export async function getPollList() {
-    // TODO
+    async getCurrentQuestion() {
+        const client = getClient()
+        const resp = await  client.get("polls/question")
+    }
+
+    async getResultList() {
+        // TODO
+    }
+
+    async sendAnswers(answers) {
+        // TODO
+    }
+
+    async registerForTest(pollId) {
+        const client = getClient()
+        const resp = await  client.get("polls/question")
+    }
 }
 
-export async function getCurrentQuestion() {
-    // TODO
-}
-
-export function getResultList() {
-    // TODO
-}

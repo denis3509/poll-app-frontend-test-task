@@ -8,7 +8,9 @@ const routes = [
         path: '/main',
         name: 'Main',
         component: MainLayout,
-        children: {}
+        children: [
+            
+        ]
     },
     {
         path: '/login',
